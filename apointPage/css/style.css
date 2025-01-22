@@ -794,3 +794,45 @@ $grey: #999;
 
 /** end footer **/
 
+
+/** start language menu **/
+
+.language-dropdown {
+     display: inline-block;
+     font-family: Arial, sans-serif;
+  }
+
+  .language-btn {
+     background-color: black;
+     border: 1px solid black;
+     color: white;
+     border-radius: 5px;
+     padding: 5px 10px;
+     cursor: pointer;
+     font-size: 16px;
+  }
+
+  .language-menu {
+     display: none; /* Inizialmente nascosto */
+     position: absolute;
+     background-color: black;
+     color: white;
+     border-radius: 5px;
+     margin-top: 5px;
+     z-index: 10;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .language-menu a {
+     display: block;
+     padding: 10px;
+     text-decoration: none;
+     color: white;
+  }
+
+  .language-menu a:hover {
+     background-color: #42c366;
+     color: white;
+  }
+
+  /** start language menu **/

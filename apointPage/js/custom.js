@@ -2,6 +2,21 @@
     File Name: custom.js
 ---------------------------------------------------------------------*/
 
+// Mostra/Nascondi il menu a tendina
+document.querySelector('.language-btn').addEventListener('click', function () {
+	const menu = document.querySelector('.language-menu');
+	menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+});
+
+// Nascondi il menu a tendina se clicchi fuori
+document.addEventListener('click', function (event) {
+	const dropdown = document.querySelector('.language-dropdown');
+	if (!dropdown.contains(event.target)) {
+		document.querySelector('.language-menu').style.display = 'none';
+	}
+});
+
+
 $(function () {
 
 	"use strict";
